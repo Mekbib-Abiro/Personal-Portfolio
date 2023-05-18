@@ -1,0 +1,130 @@
+*,::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: Helvetica, snas-serif;
+  }
+  #navbar{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: #7ea8ba;
+    z-index: 1000;
+  }
+  #navbar ul{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  #navbar ul li{
+    list-style-type: none;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px; 
+  }
+  .nav-link:hover{
+    color: red;
+    font-size: 25px;
+    transition: 1s;
+  }
+  
+  #welcome-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro{
+    font-size: 50px;
+    font-weight: bold;
+    color: #57364d;
+    margin-bottom: 20px;
+  
+  }
+  #welcome-section p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #57364d;
+  }
+  #projects{
+    background-color: #7ea8ba;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard{
+    width: 400px;
+    height: 350px;
+    margin: 30px;
+    background-color: #ccc;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  #project-title{
+    margin-bottom: 20px;
+  }
+  #project-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #57364d;
+  }
+  #project-link:hover{
+    color: red;
+  }
+  
+  #contact{
+    width: 100%;
+    height: 75px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #profile-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #57364d;
+  }
+  .link-text{
+    margin-left: 10px;
+  }
+  #profile-link:hover{
+    transform: scale(1.2);
+    color: red;
+    transition: 1s;
+  }
+  
+  @media (max-width: 768px){
+    .intro{
+  font-size: 30px;
+    }
+    #welcome-section p{
+      font-size: 20px;
+    }
+    
+  }
+  
